@@ -171,15 +171,40 @@ float: left;
 }
 .link{
 background:url('../img/link-bg.png')center no-repeat;
+
 }
 .beh{
 background:url('../img/beh-bg.png')center no-repeat;
+
 }
 .ghub{
 background:url('../img/ghub-bg.png')center no-repeat;
+
 }
 .twitt{
 background:url('../img/twitt-bg.png')center no-repeat;
+
+}
+
+.link, .beh, .ghub, .twitt{
+-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+
+.link:hover, .beh:hover, .ghub:hover, .twitt:hover{
+-moz-transform: scale(1.22);
+-webkit-transform: scale(1.22);
+-o-transform: scale(1.22);
+-ms-transform: scale(1.22);
+transform: scale(1.22);
+-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
 }
 .menu_act li a{
 height: 100%;
@@ -192,6 +217,71 @@ display:block
 .foot_con{
     width: 100%;  height: 164px;  
     /*background: green;*/  margin: 0 auto;
+
+}
+.form_act{
+max-width: 515px;
+margin: 0 auto;
+margin-top: 29px;
+height: 44px;
+/* background: red; */
+border: 2px solid #c4c4c4;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+
+.form_act :focus{
+outline:0;
+}
+
+.sub-btn{
+background: none;
+border: none;
+background: #27373a;
+color: white;
+padding: 0px;
+height: 40px;
+margin-top: 2px;
+width: 90px;
+float: right;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+margin-right: 2px;
+text-transform: lowercase;
+font-family: 'lato', sans-serif;
+/* font-weight: bold; */
+font-size: 1em;
+/* letter-spacing: .09em; */
+line-height: 1em;
+-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+
+.sub-btn:hover{
+background:#5cba09;
+-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+
+.e-input{
+border: none;
+/* background: red; */
+height: 39px;
+width: 423px;
+text-indent: 10px;
+margin-top: 2px;
+font-family: 'lato', sans-serif;
+}
+input[type="submit"]{
 
 }
 
