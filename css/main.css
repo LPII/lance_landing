@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 .top_con{
-background: url('../img/top-bg.png') center no-repeat #141414;
+background: url('../img/top-bg.png') center no-repeat #000;
 border-bottom: 4px solid #bfbfbf;
 max-height: 423px;
 }
@@ -256,20 +256,20 @@ font-family: 'lato', sans-serif;
 font-size: 1em;
 /* letter-spacing: .09em; */
 line-height: 1em;
--webkit-transition: all 300ms ease-in-out;
--moz-transition: all 300ms ease-in-out;
--ms-transition: all 300ms ease-in-out;
--o-transition: all 300ms ease-in-out;
-transition: all 300ms ease-in-out;
+-webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
 }
 
 .sub-btn:hover{
 background:#5cba09;
--webkit-transition: all 300ms ease-in-out;
--moz-transition: all 300ms ease-in-out;
--ms-transition: all 300ms ease-in-out;
--o-transition: all 300ms ease-in-out;
-transition: all 300ms ease-in-out;
+-webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
 }
 
 .e-input{
@@ -283,6 +283,19 @@ font-family: 'lato', sans-serif;
 }
 input[type="submit"]{
 
+}
+
+::-webkit-input-placeholder {
+font-style:italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+font-style:italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+font-style:italic;
+}
+:-ms-input-placeholder {  
+font-style:italic;
 }
 
 .cright_act {
