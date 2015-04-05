@@ -96,9 +96,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body{
+overflow: hidden;
+background:black;
+}
 .top_con{
-background: url('../img/top-bg.png') center no-repeat #000;
+bacfkground: url('../img/top-bg.png') center no-repeat #000;
 border-bottom: 4px solid #bfbfbf;
 max-height: 423px;
 }
@@ -148,8 +151,27 @@ font-family: 'Exo', sans-serif;
 font-family: 'Lato', sans-serif;
 font-size: 1.1em;
 }
+.content_act a:visited,
+.content_act a{
+font-weight:bold;
+color:#DADADA;
+
+}
+
+
+.content_act a:hover{
+
+color:white;
+-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+
+}
+
 .menu_act{
-margin-top: 2.7%;
+margin-top: 1.3%;
 height: 66px;
 }
 
@@ -185,13 +207,20 @@ background:url('../img/ghub-bg.png')center no-repeat;
 background:url('../img/twitt-bg.png')center no-repeat;
 
 }
-
+.
 .link, .beh, .ghub, .twitt{
+    -moz-transform: scale(1);
+-webkit-transform: scale(1);
+-o-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
 -webkit-transition: all 300ms ease-in-out;
 -moz-transition: all 300ms ease-in-out;
 -ms-transition: all 300ms ease-in-out;
 -o-transition: all 300ms ease-in-out;
 transition: all 300ms ease-in-out;
+
+border:none;
 }
 
 .link:hover, .beh:hover, .ghub:hover, .twitt:hover{
@@ -205,6 +234,7 @@ transform: scale(1.22);
 -ms-transition: all 300ms ease-in-out;
 -o-transition: all 300ms ease-in-out;
 transition: all 300ms ease-in-out;
+border-bottom:2px solid #616161;
 }
 .menu_act li a{
 height: 100%;
@@ -239,7 +269,7 @@ outline:0;
 .sub-btn{
 background: none;
 border: none;
-background: #27373a;
+background: #1C1C1C;
 color: white;
 padding: 0px;
 height: 40px;
@@ -312,14 +342,50 @@ color:#141414;
 
 
 
+video#bgvid {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background: black;
+background-size: cover;
+opacity: .25;
+}
+
+.foot_con_wrap{
+height: 100%;
+background: white;
+padding-top: 20px;
+min-height: 2000px;
+}
 
 
 
+@media all and (max-width: 665px) { 
+.foot_con_wrap{
+    display:none;
+}
+.top_con{
+border:none;
+}
+.content_act{
+    padding-left: 15px;
+  padding-right: 15px;
+}
+
+}
 
 
+@media all and (max-width: 350px) { 
 
-
-
+h1{
+      font-size: 1.5em;
+}
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
